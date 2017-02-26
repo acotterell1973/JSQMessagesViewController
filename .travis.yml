@@ -55,6 +55,6 @@ script:
 #- if [ $RUN_TESTS == "YES" ]; then
 #      xcodebuild test -workspace JSQMessages.xcworkspace -scheme JSQMessages -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES;
 #  fi
-#  if
+
 after_success:
 - bash <(curl -s https://codecov.io/bash);
