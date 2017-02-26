@@ -58,3 +58,12 @@ script:
 
 after_success:
 - bash <(curl -s https://codecov.io/bash);
+
+deploy:
+  provider: releases
+  user: "acotterell1973"
+  password: "MercedesCLK430!"
+  file: "jsqMessages.zip"
+  skip_cleanup: true
+  on:
+    tags: true
